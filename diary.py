@@ -35,6 +35,10 @@ class Diary:
         except FileNotFoundError:
             print("Faili ei leitud!")
 
+    def clear(self):
+        self.entries.clear()
+        self.counter = 0
+
     def print_statistics(self):
         # Arvutame sissekannete arvu
         count = len(self.entries)
